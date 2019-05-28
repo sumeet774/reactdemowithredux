@@ -1,0 +1,4 @@
+{ "en": {
+  "App.greeting": "Hello world. Welcome, {name}!",
+  "doctor_profile.container.profile": "Doctor Profile"
+} }

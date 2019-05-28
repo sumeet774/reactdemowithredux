@@ -1,0 +1,116 @@
+.cal-row {
+    display: flex;
+    width: 100%;
+}
+.calendar {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 12px 32px 0 32px;
+}
+.calendar .cal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.calendar .cal-header .month-display {
+    align-items: center;
+    margin-bottom: 1em;
+}
+.calendar .cal-header .month-label {
+    flex: 1;
+    font-size: 1em;
+    font-family: "OpenSans-Semibold"
+}
+.calendar .cal-header .arrow {
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    font-size: 1.4em;
+}
+.calendar .day-names {
+    color: #6c757d;
+    font-family: "OpenSans-Bold";
+    font-size: .81em;
+    justify-content: space-between;
+    padding-bottom:8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16); 
+    margin-bottom: 1em;
+}
+.calendar .day-names .day {
+    cursor: default;
+    width: 24px;
+}
+.calendar .day-names .day:hover {
+    background: inherit;
+}
+.calendar .week{
+    justify-content: space-between
+}
+.calendar .week .cal-day {
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: "Roboto-Medium";
+    font-size: .75em;
+}
+.calendar .week .cal-date{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+    border:1px solid transparent
+}
+.calendar .cal-date:hover {
+    background: #eee;
+    border:1px solid #eee;
+}
+.calendar .today .cal-date{
+    border:1px solid #2875C7;
+    background: transparent;
+}
+.calendar .cal-day.different-month {
+    color: #C0C0C0;
+}
+.calendar .week .cal-day .block{
+    display: block;
+}
+.calendar .week .cal-day .none{
+    display: none;
+}
+.event{
+    height: 5px;
+    margin-top: 2px;
+}
+.dcr-filled{
+    height:5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #6f42c1;
+}
+.dcr-missed{
+    height:5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #dc3545;
+}
+.holiday{
+    height:5px;
+    width: 5px;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #f49917;
+}
